@@ -22,16 +22,9 @@
 
 <body>
   <script>
-    function getValues(e){
-      // 來源網址（e.origin）不是指定的網域時
-  /*    if(e.origin !== '') {
-        alert('資料來源錯誤');
-        return false;
-      }*/
-      var rowData = e.data;
-      alert(rowData)
-    }
-    window.addEventListener('message', getValues, false);
+    window.addEventListener("message", (e) => {
+    console.log(e.data);
+});
   </script>
 </body>
 
